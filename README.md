@@ -19,7 +19,6 @@ This is a React-based web application designed to manage and display employee le
 - ## Installation
 
 1. Clone the repository:
-   ```bash
   git clone https://github.com/Carol254/userPanel.git
   
 2. Navigate into the project directory
