@@ -11,57 +11,28 @@ function CompanyImage() {
 
 export default function EmployeeLeaveList() {
   const employees = [
-    { id: 1, name: "Alice", leaveType: "Sick Leave", status: "Approved", startDate: "2025-02-20", endDate: "2025-02-23" },
-    { id: 2, name: "Bob", leaveType: "Vacation", status: "Pending", startDate: "2025-03-10", endDate: "2025-03-15" },
-    { id: 3, name: "Charlie", leaveType: "Casual Leave", status: "Rejected", startDate: "2025-02-18", endDate: "2025-02-19" },
-    { id: 4, name: "David", leaveType: "Sick Leave", status: "Approved", startDate: "2025-02-21", endDate: "2025-02-22" },
-    { id: 5, name: "Eve", leaveType: "Vacation", status: "Pending", startDate: "2025-03-05", endDate: "2025-03-10" },
-    { id: 6, name: "Frank", leaveType: "Sick Leave", status: "Approved", startDate: "2025-02-25", endDate: "2025-02-28" },
-    { id: 7, name: "Grace", leaveType: "Vacation", status: "Pending", startDate: "2025-04-01", endDate: "2025-04-05" },
-    { id: 8, name: "Hannah", leaveType: "Casual Leave", status: "Approved", startDate: "2025-02-18", endDate: "2025-02-19" },
-    { id: 9, name: "Isaac", leaveType: "Sick Leave", status: "Pending", startDate: "2025-03-20", endDate: "2025-03-22" },
-    { id: 10, name: "Jack", leaveType: "Vacation", status: "Rejected", startDate: "2025-02-28", endDate: "2025-03-05" },
-    { id: 11, name: "Kathy", leaveType: "Sick Leave", status: "Approved", startDate: "2025-03-05", endDate: "2025-03-07" },
-    { id: 12, name: "Liam", leaveType: "Vacation", status: "Pending", startDate: "2025-03-10", endDate: "2025-03-12" },
-    { id: 13, name: "Mona", leaveType: "Casual Leave", status: "Rejected", startDate: "2025-02-15", endDate: "2025-02-16" },
-    { id: 14, name: "Nathan", leaveType: "Sick Leave", status: "Pending", startDate: "2025-04-05", endDate: "2025-04-10" },
-    { id: 15, name: "Olivia", leaveType: "Vacation", status: "Approved", startDate: "2025-03-01", endDate: "2025-03-04" },
-    { id: 16, name: "Paul", leaveType: "Sick Leave", status: "Pending", startDate: "2025-03-12", endDate: "2025-03-14" },
-    { id: 17, name: "Quincy", leaveType: "Vacation", status: "Approved", startDate: "2025-04-01", endDate: "2025-04-07" },
-    { id: 18, name: "Rachel", leaveType: "Casual Leave", status: "Pending", startDate: "2025-03-05", endDate: "2025-03-06" },
-    { id: 19, name: "Samuel", leaveType: "Sick Leave", status: "Approved", startDate: "2025-02-22", endDate: "2025-02-24" },
-    { id: 20, name: "Tina", leaveType: "Vacation", status: "Rejected", startDate: "2025-03-20", endDate: "2025-03-25" },
-    { id: 21, name: "Ursula", leaveType: "Sick Leave", status: "Approved", startDate: "2025-02-28", endDate: "2025-03-01" },
-    { id: 22, name: "Victor", leaveType: "Vacation", status: "Pending", startDate: "2025-04-03", endDate: "2025-04-08" },
-    { id: 23, name: "Walter", leaveType: "Casual Leave", status: "Approved", startDate: "2025-02-20", endDate: "2025-02-22" },
-    { id: 24, name: "Xander", leaveType: "Sick Leave", status: "Pending", startDate: "2025-03-05", endDate: "2025-03-08" },
-    { id: 25, name: "Yvonne", leaveType: "Vacation", status: "Approved", startDate: "2025-03-15", endDate: "2025-03-18" },
-    { id: 26, name: "Zachary", leaveType: "Casual Leave", status: "Rejected", startDate: "2025-02-25", endDate: "2025-02-27" },
-    { id: 27, name: "Adeline", leaveType: "Sick Leave", status: "Approved", startDate: "2025-02-28", endDate: "2025-03-02" },
-    { id: 28, name: "Brian", leaveType: "Vacation", status: "Pending", startDate: "2025-03-11", endDate: "2025-03-13" },
-    { id: 29, name: "Catherine", leaveType: "Casual Leave", status: "Approved", startDate: "2025-03-05", endDate: "2025-03-06" },
-    { id: 30, name: "Derek", leaveType: "Sick Leave", status: "Pending", startDate: "2025-04-01", endDate: "2025-04-04" },
-    { id: 31, name: "Ella", leaveType: "Vacation", status: "Approved", startDate: "2025-03-17", endDate: "2025-03-19" },
-    { id: 32, name: "Frederick", leaveType: "Casual Leave", status: "Rejected", startDate: "2025-02-10", endDate: "2025-02-13" },
-    { id: 33, name: "Gina", leaveType: "Sick Leave", status: "Approved", startDate: "2025-02-22", endDate: "2025-02-24" },
-    { id: 34, name: "Harold", leaveType: "Vacation", status: "Pending", startDate: "2025-03-07", endDate: "2025-03-10" },
-    { id: 35, name: "Ivy", leaveType: "Casual Leave", status: "Approved", startDate: "2025-02-14", endDate: "2025-02-16" },
-    { id: 36, name: "Jackie", leaveType: "Sick Leave", status: "Pending", startDate: "2025-03-18", endDate: "2025-03-22" },
-    { id: 37, name: "Karl", leaveType: "Vacation", status: "Approved", startDate: "2025-03-25", endDate: "2025-03-30" },
-    { id: 38, name: "Lillian", leaveType: "Casual Leave", status: "Rejected", startDate: "2025-02-12", endDate: "2025-02-14" },
-    { id: 39, name: "Martin", leaveType: "Sick Leave", status: "Pending", startDate: "2025-03-30", endDate: "2025-04-02" },
-    { id: 40, name: "Nina", leaveType: "Vacation", status: "Approved", startDate: "2025-04-02", endDate: "2025-04-05" },
-    { id: 41, name: "Oscar", leaveType: "Casual Leave", status: "Pending", startDate: "2025-03-19", endDate: "2025-03-21" },
-    { id: 42, name: "Paula", leaveType: "Sick Leave", status: "Approved", startDate: "2025-02-20", endDate: "2025-02-22" },
-    { id: 43, name: "Quentin", leaveType: "Vacation", status: "Pending", startDate: "2025-03-12", endDate: "2025-03-16" },
-    { id: 44, name: "Rita", leaveType: "Casual Leave", status: "Approved", startDate: "2025-03-23", endDate: "2025-03-25" },
-    { id: 45, name: "Steve", leaveType: "Sick Leave", status: "Pending", startDate: "2025-02-18", endDate: "2025-02-22" },
-    { id: 46, name: "Tracy", leaveType: "Vacation", status: "Approved", startDate: "2025-03-28", endDate: "2025-03-31" },
-    { id: 47, name: "Uma", leaveType: "Casual Leave", status: "Rejected", startDate: "2025-02-28", endDate: "2025-03-01" },
-    { id: 48, name: "Vera", leaveType: "Sick Leave", status: "Pending", startDate: "2025-04-05", endDate: "2025-04-08" },
-    { id: 49, name: "Wendy", leaveType: "Vacation", status: "Approved", startDate: "2025-03-04", endDate: "2025-03-08" },
-    { id: 50, name: "Xena", leaveType: "Casual Leave", status: "Pending", startDate: "2025-03-15", endDate: "2025-03-17" },
-  ];
+    { id: 1, name: "Alice", leaveType: "Sick Leave", status: "Approved", startDate: "2025-02-20", endDate: "2025-02-23", department: "HR", jobTitle: "HR Manager", contactDetails: "alice@example.com" },
+    { id: 2, name: "Bob", leaveType: "Vacation", status: "Pending", startDate: "2025-03-10", endDate: "2025-03-15", department: "Finance", jobTitle: "Accountant", contactDetails: "bob@example.com" },
+    { id: 3, name: "Charlie", leaveType: "Casual Leave", status: "Rejected", startDate: "2025-02-18", endDate: "2025-02-19", department: "IT", jobTitle: "Software Engineer", contactDetails: "charlie@example.com" },
+    { id: 4, name: "David", leaveType: "Sick Leave", status: "Approved", startDate: "2025-02-21", endDate: "2025-02-22", department: "Marketing", jobTitle: "Marketing Specialist", contactDetails: "david@example.com" },
+    { id: 5, name: "Eve", leaveType: "Vacation", status: "Pending", startDate: "2025-03-05", endDate: "2025-03-10", department: "Sales", jobTitle: "Sales Representative", contactDetails: "eve@example.com" },
+    { id: 6, name: "Frank", leaveType: "Sick Leave", status: "Approved", startDate: "2025-02-25", endDate: "2025-02-28", department: "Operations", jobTitle: "Operations Manager", contactDetails: "frank@example.com" },
+    { id: 7, name: "Grace", leaveType: "Vacation", status: "Pending", startDate: "2025-04-01", endDate: "2025-04-05", department: "Finance", jobTitle: "Financial Analyst", contactDetails: "grace@example.com" },
+    { id: 8, name: "Hannah", leaveType: "Casual Leave", status: "Approved", startDate: "2025-02-18", endDate: "2025-02-19", department: "HR", jobTitle: "Recruiter", contactDetails: "hannah@example.com" },
+    { id: 9, name: "Isaac", leaveType: "Sick Leave", status: "Pending", startDate: "2025-03-20", endDate: "2025-03-22", department: "IT", jobTitle: "System Administrator", contactDetails: "isaac@example.com" },
+    { id: 10, name: "Jack", leaveType: "Vacation", status: "Rejected", startDate: "2025-02-28", endDate: "2025-03-05", department: "Marketing", jobTitle: "SEO Specialist", contactDetails: "jack@example.com" },
+    { id: 11, name: "Kathy", leaveType: "Sick Leave", status: "Approved", startDate: "2025-03-05", endDate: "2025-03-07", department: "Sales", jobTitle: "Sales Manager", contactDetails: "kathy@example.com" },
+    { id: 12, name: "Liam", leaveType: "Vacation", status: "Pending", startDate: "2025-03-10", endDate: "2025-03-12", department: "Operations", jobTitle: "Logistics Coordinator", contactDetails: "liam@example.com" },
+    { id: 13, name: "Mona", leaveType: "Casual Leave", status: "Rejected", startDate: "2025-02-15", endDate: "2025-02-16", department: "IT", jobTitle: "Backend Developer", contactDetails: "mona@example.com" },
+    { id: 14, name: "Nathan", leaveType: "Sick Leave", status: "Pending", startDate: "2025-04-05", endDate: "2025-04-10", department: "Finance", jobTitle: "Tax Consultant", contactDetails: "nathan@example.com" },
+    { id: 15, name: "Olivia", leaveType: "Vacation", status: "Approved", startDate: "2025-03-01", endDate: "2025-03-04", department: "HR", jobTitle: "HR Assistant", contactDetails: "olivia@example.com" },
+    { id: 16, name: "Paul", leaveType: "Sick Leave", status: "Pending", startDate: "2025-03-12", endDate: "2025-03-14", department: "IT", jobTitle: "UI/UX Designer", contactDetails: "paul@example.com" },
+    { id: 17, name: "Quincy", leaveType: "Vacation", status: "Approved", startDate: "2025-04-01", endDate: "2025-04-07", department: "Marketing", jobTitle: "Content Creator", contactDetails: "quincy@example.com" },
+    { id: 18, name: "Rachel", leaveType: "Casual Leave", status: "Pending", startDate: "2025-03-05", endDate: "2025-03-06", department: "Finance", jobTitle: "Payroll Specialist", contactDetails: "rachel@example.com" },
+    { id: 19, name: "Samuel", leaveType: "Sick Leave", status: "Approved", startDate: "2025-02-22", endDate: "2025-02-24", department: "Sales", jobTitle: "Account Executive", contactDetails: "samuel@example.com" },
+    { id: 20, name: "Tina", leaveType: "Vacation", status: "Rejected", startDate: "2025-03-20", endDate: "2025-03-25", department: "HR", jobTitle: "Training Coordinator", contactDetails: "tina@example.com" },
+];
+
   
 
   const [filteredEmployees, setFilteredEmployees] = useState(employees);
@@ -147,6 +118,9 @@ export default function EmployeeLeaveList() {
           <div className="modal">
             <h2>Leave Request Details</h2>
             <p><strong>Employee Name:</strong> {selectedEmployee.name}</p>
+            <p><strong>Department:</strong> {selectedEmployee.department}</p>
+            <p><strong>Job Title:</strong> {selectedEmployee.jobTitle}</p>
+            <p><strong>Contact Details:</strong>{selectedEmployee.contactDetails}</p>
             <p><strong>Leave Type:</strong> {selectedEmployee.leaveType}</p>
             <p><strong>Status:</strong> {selectedEmployee.status}</p>
             <p><strong>Leave Dates:</strong> {selectedEmployee.startDate} to {selectedEmployee.endDate}</p>
