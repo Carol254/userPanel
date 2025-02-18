@@ -40,7 +40,7 @@ Navigate between pages of employees with pagination controls.
 ## Screenshots
 
 ### Leave Request Summary
-![Leave Request Summary](screenshots/screenshot_1.png)
+![Employee Leave Request Summary](screenshots/screenshot_1.png)
 
 *This screenshot shows a summary of all leave requests submitted by employees.*
 
