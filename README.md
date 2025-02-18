@@ -25,7 +25,7 @@ This is a React-based web application designed to manage and display employee le
 2. Navigate into the project directory
      cd employee-leave-request-app
    
-3 . Install dependencies
+3. Install dependencies
    npm install
    
 4. Run the application
