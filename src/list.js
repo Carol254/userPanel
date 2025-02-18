@@ -1,6 +1,4 @@
-
-
-  export default function FilteredList({ items }) {
+export default function FilteredList({ items }) {
     return (
       <ul>
         {items
