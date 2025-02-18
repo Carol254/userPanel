@@ -47,9 +47,13 @@ export default function EmployeeLeaveList() {
   const handleSearchChange = (e) => {
     const query = e.target.value.toLowerCase();
     setSearchQuery(query);
-    setFilteredEmployees(
-      employees.filter((employee) => employee.name.toLowerCase().includes(query))
+    
+    const filtered = employees.filter((employee) =>
+      employee.name.toLowerCase().includes(query)
     );
+    
+    setFilteredEmployees(filtered);
+    setCurrentPage(1); 
   };
 
   const handleEmployeeClick = (employee) => {
