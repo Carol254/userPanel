@@ -37,5 +37,21 @@ Search for employees by name.
 Click on an employee to view detailed leave request information.
 Navigate between pages of employees with pagination controls.
 
-   
-   
+## Screenshots
+
+### Leave Request Summary
+![Leave Request Summary](screenshots/screenshot_1.png)
+
+*This screenshot shows a summary of all leave requests submitted by employees.*
+
+### Employee Leave Search Page
+![Employee Leave Request Page](screenshots/screenshot_2.png)
+
+*This screenshot shows the employee leave request page in the app.*
+
+### Employee Leave Details
+![Employee Leave Details](screenshots/screenshot_3.png)
+
+*This screenshot displays the employee leave details page.*
+
+
