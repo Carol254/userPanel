@@ -51,6 +51,6 @@ Navigate between pages of employees with pagination controls.
 ### Employee Leave Details
 ![Employee Leave Details](screenshots/screenshot_4.png)
 
-*This screenshot displays the employee leave details page.*
+*This screenshot displays the employee leave details page.The admin can change the leave status*
 
 
