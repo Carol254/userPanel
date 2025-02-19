@@ -10,7 +10,7 @@ function CompanyImage() {
 }
 
 export default function EmployeeLeaveList() {
-  const employees = [
+  const [employees,setEmployees ]= useState([
     { id: 1, name: "Alice", leaveType: "Sick Leave", status: "Approved", startDate: "2025-02-20", endDate: "2025-02-23", department: "HR", jobTitle: "HR Manager", contactDetails: "alice@example.com" },
     { id: 2, name: "Bob", leaveType: "Vacation", status: "Pending", startDate: "2025-03-10", endDate: "2025-03-15", department: "Finance", jobTitle: "Accountant", contactDetails: "bob@example.com" },
     { id: 3, name: "Charlie", leaveType: "Casual Leave", status: "Rejected", startDate: "2025-02-18", endDate: "2025-02-19", department: "IT", jobTitle: "Software Engineer", contactDetails: "charlie@example.com" },
@@ -31,7 +31,7 @@ export default function EmployeeLeaveList() {
     { id: 18, name: "Rachel", leaveType: "Casual Leave", status: "Pending", startDate: "2025-03-05", endDate: "2025-03-06", department: "Finance", jobTitle: "Payroll Specialist", contactDetails: "rachel@example.com" },
     { id: 19, name: "Samuel", leaveType: "Sick Leave", status: "Approved", startDate: "2025-02-22", endDate: "2025-02-24", department: "Sales", jobTitle: "Account Executive", contactDetails: "samuel@example.com" },
     { id: 20, name: "Tina", leaveType: "Vacation", status: "Rejected", startDate: "2025-03-20", endDate: "2025-03-25", department: "HR", jobTitle: "Training Coordinator", contactDetails: "tina@example.com" },
-];
+  ]);
 
   
 
@@ -65,6 +65,25 @@ export default function EmployeeLeaveList() {
     setIsModalOpen(false);
     setSelectedEmployee(null);
   };
+
+  const handleStatusChange = (newStatus) => {
+    if (selectedEmployee) {
+      setEmployees((prevEmployees) =>
+        prevEmployees.map((emp) =>
+          emp.id === selectedEmployee.id ? { ...emp, status: newStatus } : emp
+        )
+      );
+  
+      setFilteredEmployees((prevFiltered) =>
+        prevFiltered.map((emp) =>
+          emp.id === selectedEmployee.id ? { ...emp, status: newStatus } : emp
+        )
+      );
+  
+      setSelectedEmployee((prev) => ({ ...prev, status: newStatus }));
+    }
+  };
+  
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
@@ -108,9 +127,7 @@ export default function EmployeeLeaveList() {
                 <td>{employee.id}</td>
                 <td>{employee.name}</td>
                 <td>{employee.leaveType}</td>
-                <td className={employee.status === "Approved" ? "approved" : employee.status === "Pending" ? "pending" : "rejected"}>
-                  {employee.status}
-                </td>
+                <td className={employee.status.toLowerCase()}>{employee.status}</td>
               </tr>
             ))}
           </tbody>
@@ -126,8 +143,16 @@ export default function EmployeeLeaveList() {
             <p><strong>Job Title:</strong> {selectedEmployee.jobTitle}</p>
             <p><strong>Contact Details:</strong>{selectedEmployee.contactDetails}</p>
             <p><strong>Leave Type:</strong> {selectedEmployee.leaveType}</p>
-            <p><strong>Status:</strong> {selectedEmployee.status}</p>
             <p><strong>Leave Dates:</strong> {selectedEmployee.startDate} to {selectedEmployee.endDate}</p>
+            <p><strong>Status:</strong> {selectedEmployee.status}</p>
+
+            <label><strong>Update Status:</strong></label>
+            <select value={selectedEmployee.status} onChange={(e) => handleStatusChange(e.target.value)}>
+              <option value="Approved">Approved</option>
+              <option value="Pending">Pending</option>
+              <option value="Rejected">Rejected</option>
+            </select>
+
             <button onClick={closeModal}>Close</button>
           </div>
         </div>
