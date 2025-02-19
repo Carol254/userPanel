@@ -147,13 +147,14 @@ export default function EmployeeLeaveList() {
             <p><strong>Status:</strong> {selectedEmployee.status}</p>
 
             <label><strong>Update Status:</strong></label>
-            <select value={selectedEmployee.status} onChange={(e) => handleStatusChange(e.target.value)}>
+            <select value={selectedEmployee.status} onChange={(e) => handleStatusChange(e.target.value)} style={{padding: "5px" ,border: "2px solid #4cb050", borderRadius: "5px"}}>
               <option value="Approved">Approved</option>
               <option value="Pending">Pending</option>
               <option value="Rejected">Rejected</option>
             </select>
+            <br></br>
 
-            <button onClick={closeModal}>Close</button>
+            <button onClick={closeModal} style={{backgroundColor:"#4cb050"}}>Close</button>
           </div>
         </div>
       )}
