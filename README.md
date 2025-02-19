@@ -49,7 +49,7 @@ Navigate between pages of employees with pagination controls.
 *This screenshot shows the employee leave request page in the app.*
 
 ### Employee Leave Details
-![Employee Leave Details](screenshots/screenshot_3.png)
+![Employee Leave Details](screenshots/screenshot_4.png)
 
 *This screenshot displays the employee leave details page.*
 
