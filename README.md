@@ -38,6 +38,11 @@ Navigate between pages of employees with pagination controls.
 
 ## Screenshots
 
+### Login Page
+![Admin login page](screenshots/login_screenshot.png)
+
+*This screenshot shows the login page.*
+
 ### Leave Request Summary
 ![Employee Leave Request Summary](screenshots/Screenshot_1.png)
 
