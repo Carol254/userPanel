@@ -178,6 +178,16 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .company-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  
+}
+
 /* Search Bar Container */
 .search-bar {
   margin-bottom: 20px;
