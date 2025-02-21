@@ -64,7 +64,9 @@ body {
 
 .subtitle {
   margin-top: 20px;
-  color: #555;
+  color: #000;
+  /* text-align: center; */
+  text-decoration: underline #4CAF50;
 }
 
 /* employee List */
@@ -126,7 +128,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
 }
 .company-image{
   width: 400px;
@@ -192,8 +193,8 @@ body {
 .search-bar {
   margin-bottom: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
 }
 
 /* Search Bar Input */
@@ -209,8 +210,8 @@ body {
 
 /* Focus Effect for Search Bar */
 .search-bar input:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px #4CAF50;
 }
 
 /* Search Icon Styling (Optional) */

@@ -111,7 +111,7 @@ export default function EmployeeLeaveList() {
      <div className="d-flex" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <h1 className="title" style={{ flex: 1, textAlign: 'center' }}>ABC COMPANY</h1>
         <button style={{ alignSelf: 'flex-end',marginBottom :'8px' }}>
-            <a href="/login" style={{ textDecoration: 'none' }}>Logout</a>
+            <a href="/login" style={{ textDecoration: 'none' ,color:'#fff' }}>Logout</a>
         </button>
     </div>
   
