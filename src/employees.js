@@ -31,6 +31,16 @@ export default function EmployeeLeaveList() {
     { id: 18, name: "Rachel", leaveType: "Casual Leave", status: "Pending", startDate: "2025-03-05", endDate: "2025-03-06", department: "Finance", jobTitle: "Payroll Specialist", contactDetails: "rachel@example.com" },
     { id: 19, name: "Samuel", leaveType: "Sick Leave", status: "Approved", startDate: "2025-02-22", endDate: "2025-02-24", department: "Sales", jobTitle: "Account Executive", contactDetails: "samuel@example.com" },
     { id: 20, name: "Tina", leaveType: "Vacation", status: "Rejected", startDate: "2025-03-20", endDate: "2025-03-25", department: "HR", jobTitle: "Training Coordinator", contactDetails: "tina@example.com" },
+    { id: 21, name: "Kate", leaveType: "Sick Leave", status: "Approved", startDate: "2025-03-05", endDate: "2025-03-07", department: "Procurement", jobTitle: " Manager", contactDetails: "kate@example.com" },
+    { id: 22, name: "Lilian", leaveType: "Vacation", status: "Pending", startDate: "2025-03-10", endDate: "2025-03-12", department: "Operations", jobTitle: "Logistics Coordinator", contactDetails: "lilian@example.com" },
+    { id: 23, name: "Monalisa", leaveType: "Sick Leave", status: "Rejected", startDate: "2025-02-23", endDate: "2025-02-24", department: "IT", jobTitle: "Backend Developer", contactDetails: "monalisa@example.com" },
+    { id: 24, name: "Nathaniel", leaveType: "Sick Leave", status: "Pending", startDate: "2025-04-01", endDate: "2025-04-10", department: "Procurement", jobTitle: "Trainee", contactDetails: "nathanial@example.com" },
+    { id: 25, name: "Lia", leaveType: "Sick Leave", status: "Approved", startDate: "2025-03-11", endDate: "2025-03-23", department: "HR", jobTitle: "Trainee", contactDetails: "lia@example.com" },
+    { id: 26, name: "Paulina", leaveType: "Sick Leave", status: "Pending", startDate: "2025-03-09", endDate: "2025-03-14", department: "IT", jobTitle: "UI/UX Designer", contactDetails: "paulina@example.com" },
+    { id: 27, name: "Quinne", leaveType: "Vacation", status: "Approved", startDate: "2025-05-01", endDate: "2025-05-07", department: "Marketing", jobTitle: "Content Creator", contactDetails: "quinne@example.com" },
+    { id: 28, name: "Rara", leaveType: "Casual Leave", status: "Pending", startDate: "2025-07-05", endDate: "2025-07-06", department: "Finance", jobTitle: "Accountant", contactDetails: "rara@example.com" },
+    { id: 29, name: "Kasamuel", leaveType: "Casual Leave", status: "Approved", startDate: "2025-02-28", endDate: "2025-03-24", department: "Sales", jobTitle: "Trainee", contactDetails: "kasamuel@example.com" },
+    { id: 30, name: "Trina", leaveType: "Sick Leave", status: "Rejected", startDate: "2025-03-09", endDate: "2025-03-25", department: "HR", jobTitle: "Trainee", contactDetails: "trina@example.com" },
   ]);
 
   
