@@ -39,17 +39,22 @@ Navigate between pages of employees with pagination controls.
 ## Screenshots
 
 ### Login Page
-![Admin login page](screenshots/login_screenshot.png)
+![Admin login page](screenshots/screenshot_login.png)
 
 *This screenshot shows the login page.*
 
+### Dashboard Page
+![Admin Dashboard page](screenshots/screenshot_dashboard.png)
+
+*This screenshot shows the dashboard page.*
+
 ### Leave Request Summary
-![Employee Leave Request Summary](screenshots/Screenshot_1.png)
+![Employee Leave Request Summary](screenshots/screenshot_employee_list.png)
 
 *This screenshot shows a summary of all leave requests submitted by employees.*
 
 ### Employee Leave Search Page
-![Employee Leave Request Page](screenshots/screenshot_2.png)
+![Employee Leave Request Page](screenshots/screenshot_search.png)
 
 *This screenshot shows the employee leave request page in the app.*
 
