@@ -21,7 +21,7 @@ export default function Login({ onLogin }) {
 
     if (email === "admin@example.com" && password === "password123") {
       onLogin(); 
-      navigate("/employees");
+      navigate("/dashboard");
     } else {
       setError("Invalid email or password.");
     }

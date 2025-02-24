@@ -1,46 +1,44 @@
 import { useState } from "react";
 import "./App.css"; // Assuming you have a CSS file for styling
 
-function CompanyImage() {
-  return (
-    <div className="company-image-container">
-      <img src="../company-2.jpg" alt="Company Logo" className="company-image" />
-    </div>
-  );
-}
+// function CompanyImage() {
+//   return (
+//     <div className="company-image-container">
+//       <img src="../company-2.jpg" alt="Company Logo" className="company-image" />
+//     </div>
+//   );
+// }
 
 export default function EmployeeLeaveList() {
   const [employees,setEmployees ]= useState([
-    { id: 1, name: "Alice", leaveType: "Sick Leave", status: "Approved", startDate: "2025-02-20", endDate: "2025-02-23", department: "HR", jobTitle: "HR Manager", contactDetails: "alice@example.com" },
-    { id: 2, name: "Bob", leaveType: "Vacation", status: "Pending", startDate: "2025-03-10", endDate: "2025-03-15", department: "Finance", jobTitle: "Accountant", contactDetails: "bob@example.com" },
-    { id: 3, name: "Charlie", leaveType: "Casual Leave", status: "Rejected", startDate: "2025-02-18", endDate: "2025-02-19", department: "IT", jobTitle: "Software Engineer", contactDetails: "charlie@example.com" },
-    { id: 4, name: "David", leaveType: "Sick Leave", status: "Approved", startDate: "2025-02-21", endDate: "2025-02-22", department: "Marketing", jobTitle: "Marketing Specialist", contactDetails: "david@example.com" },
-    { id: 5, name: "Eve", leaveType: "Vacation", status: "Pending", startDate: "2025-03-05", endDate: "2025-03-10", department: "Sales", jobTitle: "Sales Representative", contactDetails: "eve@example.com" },
-    { id: 6, name: "Frank", leaveType: "Sick Leave", status: "Approved", startDate: "2025-02-25", endDate: "2025-02-28", department: "Operations", jobTitle: "Operations Manager", contactDetails: "frank@example.com" },
-    { id: 7, name: "Grace", leaveType: "Vacation", status: "Pending", startDate: "2025-04-01", endDate: "2025-04-05", department: "Finance", jobTitle: "Financial Analyst", contactDetails: "grace@example.com" },
-    { id: 8, name: "Hannah", leaveType: "Casual Leave", status: "Approved", startDate: "2025-02-18", endDate: "2025-02-19", department: "HR", jobTitle: "Recruiter", contactDetails: "hannah@example.com" },
-    { id: 9, name: "Isaac", leaveType: "Sick Leave", status: "Pending", startDate: "2025-03-20", endDate: "2025-03-22", department: "IT", jobTitle: "System Administrator", contactDetails: "isaac@example.com" },
-    { id: 10, name: "Jack", leaveType: "Vacation", status: "Rejected", startDate: "2025-02-28", endDate: "2025-03-05", department: "Marketing", jobTitle: "SEO Specialist", contactDetails: "jack@example.com" },
-    { id: 11, name: "Kathy", leaveType: "Sick Leave", status: "Approved", startDate: "2025-03-05", endDate: "2025-03-07", department: "Sales", jobTitle: "Sales Manager", contactDetails: "kathy@example.com" },
-    { id: 12, name: "Liam", leaveType: "Vacation", status: "Pending", startDate: "2025-03-10", endDate: "2025-03-12", department: "Operations", jobTitle: "Logistics Coordinator", contactDetails: "liam@example.com" },
-    { id: 13, name: "Mona", leaveType: "Casual Leave", status: "Rejected", startDate: "2025-02-15", endDate: "2025-02-16", department: "IT", jobTitle: "Backend Developer", contactDetails: "mona@example.com" },
-    { id: 14, name: "Nathan", leaveType: "Sick Leave", status: "Pending", startDate: "2025-04-05", endDate: "2025-04-10", department: "Finance", jobTitle: "Tax Consultant", contactDetails: "nathan@example.com" },
-    { id: 15, name: "Olivia", leaveType: "Vacation", status: "Approved", startDate: "2025-03-01", endDate: "2025-03-04", department: "HR", jobTitle: "HR Assistant", contactDetails: "olivia@example.com" },
-    { id: 16, name: "Paul", leaveType: "Sick Leave", status: "Pending", startDate: "2025-03-12", endDate: "2025-03-14", department: "IT", jobTitle: "UI/UX Designer", contactDetails: "paul@example.com" },
-    { id: 17, name: "Quincy", leaveType: "Vacation", status: "Approved", startDate: "2025-04-01", endDate: "2025-04-07", department: "Marketing", jobTitle: "Content Creator", contactDetails: "quincy@example.com" },
-    { id: 18, name: "Rachel", leaveType: "Casual Leave", status: "Pending", startDate: "2025-03-05", endDate: "2025-03-06", department: "Finance", jobTitle: "Payroll Specialist", contactDetails: "rachel@example.com" },
-    { id: 19, name: "Samuel", leaveType: "Sick Leave", status: "Approved", startDate: "2025-02-22", endDate: "2025-02-24", department: "Sales", jobTitle: "Account Executive", contactDetails: "samuel@example.com" },
-    { id: 20, name: "Tina", leaveType: "Vacation", status: "Rejected", startDate: "2025-03-20", endDate: "2025-03-25", department: "HR", jobTitle: "Training Coordinator", contactDetails: "tina@example.com" },
-    { id: 21, name: "Kate", leaveType: "Sick Leave", status: "Approved", startDate: "2025-03-05", endDate: "2025-03-07", department: "Procurement", jobTitle: " Manager", contactDetails: "kate@example.com" },
-    { id: 22, name: "Lilian", leaveType: "Vacation", status: "Pending", startDate: "2025-03-10", endDate: "2025-03-12", department: "Operations", jobTitle: "Logistics Coordinator", contactDetails: "lilian@example.com" },
-    { id: 23, name: "Monalisa", leaveType: "Sick Leave", status: "Rejected", startDate: "2025-02-23", endDate: "2025-02-24", department: "IT", jobTitle: "Backend Developer", contactDetails: "monalisa@example.com" },
-    { id: 24, name: "Nathaniel", leaveType: "Sick Leave", status: "Pending", startDate: "2025-04-01", endDate: "2025-04-10", department: "Procurement", jobTitle: "Trainee", contactDetails: "nathanial@example.com" },
-    { id: 25, name: "Lia", leaveType: "Sick Leave", status: "Approved", startDate: "2025-03-11", endDate: "2025-03-23", department: "HR", jobTitle: "Trainee", contactDetails: "lia@example.com" },
-    { id: 26, name: "Paulina", leaveType: "Sick Leave", status: "Pending", startDate: "2025-03-09", endDate: "2025-03-14", department: "IT", jobTitle: "UI/UX Designer", contactDetails: "paulina@example.com" },
-    { id: 27, name: "Quinne", leaveType: "Vacation", status: "Approved", startDate: "2025-05-01", endDate: "2025-05-07", department: "Marketing", jobTitle: "Content Creator", contactDetails: "quinne@example.com" },
-    { id: 28, name: "Rara", leaveType: "Casual Leave", status: "Pending", startDate: "2025-07-05", endDate: "2025-07-06", department: "Finance", jobTitle: "Accountant", contactDetails: "rara@example.com" },
-    { id: 29, name: "Kasamuel", leaveType: "Casual Leave", status: "Approved", startDate: "2025-02-28", endDate: "2025-03-24", department: "Sales", jobTitle: "Trainee", contactDetails: "kasamuel@example.com" },
-    { id: 30, name: "Trina", leaveType: "Sick Leave", status: "Rejected", startDate: "2025-03-09", endDate: "2025-03-25", department: "HR", jobTitle: "Trainee", contactDetails: "trina@example.com" },
+    { id: 1,  avatar:'../avatars/woman (1).png',   name: "Alice", leaveType: "Sick Leave", status: "Approved", startDate: "2025-02-20", endDate: "2025-02-23", department: "HR", jobTitle: "HR Manager", contactDetails: "alice@example.com" },
+    { id: 2,  avatar:'../avatars/man.png',  name: "Bob", leaveType: "Vacation", status: "Pending", startDate: "2025-03-10", endDate: "2025-03-15", department: "Finance", jobTitle: "Accountant", contactDetails: "bob@example.com" },
+    { id: 3,  avatar:'../avatars/businesswoman.png',  name: "Eve", leaveType: "Vacation", status: "Pending", startDate: "2025-03-05", endDate: "2025-03-10", department: "Sales", jobTitle: "Sales Representative", contactDetails: "eve@example.com" },
+    { id: 6,  avatar:'',  name: "Frank", leaveType: "Sick Leave", status: "Approved", startDate: "2025-02-25", endDate: "2025-02-28", department: "Operations", jobTitle: "Operations Manager", contactDetails: "frank@example.com" },
+    { id: 7,  avatar:'../avatars/woman (2).png',  name: "Grace", leaveType: "Vacation", status: "Pending", startDate: "2025-04-01", endDate: "2025-04-05", department: "Finance", jobTitle: "Financial Analyst", contactDetails: "grace@example.com" },
+    { id: 8,  avatar:'../avatars/woman (3).png',  name: "Hannah", leaveType: "Casual Leave", status: "Approved", startDate: "2025-02-18", endDate: "2025-02-19", department: "HR", jobTitle: "Recruiter", contactDetails: "hannah@example.com" },
+    { id: 9,  avatar:'',  name: "Isaac", leaveType: "Sick Leave", status: "Pending", startDate: "2025-03-20", endDate: "2025-03-22", department: "IT", jobTitle: "System Administrator", contactDetails: "isaac@example.com" },
+    { id: 10, avatar:'', name: "Jack", leaveType: "Vacation", status: "Rejected", startDate: "2025-02-28", endDate: "2025-03-05", department: "Marketing", jobTitle: "SEO Specialist", contactDetails: "jack@example.com" },
+    { id: 11, avatar:'../avatars/woman (4).png', name: "Kathy", leaveType: "Sick Leave", status: "Approved", startDate: "2025-03-05", endDate: "2025-03-07", department: "Sales", jobTitle: "Sales Manager", contactDetails: "kathy@example.com" },
+    { id: 12, avatar:'',  name: "Liam", leaveType: "Vacation", status: "Pending", startDate: "2025-03-10", endDate: "2025-03-12", department: "Operations", jobTitle: "Logistics Coordinator", contactDetails: "liam@example.com" },
+    { id: 13, avatar:'../avatars/user (1).png',  name: "Mona", leaveType: "Casual Leave", status: "Rejected", startDate: "2025-02-15", endDate: "2025-02-16", department: "IT", jobTitle: "Backend Developer", contactDetails: "mona@example.com" },
+    { id: 14, avatar:'', name: "Nathan", leaveType: "Sick Leave", status: "Pending", startDate: "2025-04-05", endDate: "2025-04-10", department: "Finance", jobTitle: "Tax Consultant", contactDetails: "nathan@example.com" },
+    { id: 15, avatar:'../avatars/woman.png', name: "Olivia", leaveType: "Vacation", status: "Approved", startDate: "2025-03-01", endDate: "2025-03-04", department: "HR", jobTitle: "HR Assistant", contactDetails: "olivia@example.com" },
+    { id: 16, avatar:'',  name: "Paul", leaveType: "Sick Leave", status: "Pending", startDate: "2025-03-12", endDate: "2025-03-14", department: "IT", jobTitle: "UI/UX Designer", contactDetails: "paul@example.com" },
+    { id: 17, avatar:'', name: "Quincy", leaveType: "Vacation", status: "Approved", startDate: "2025-04-01", endDate: "2025-04-07", department: "Marketing", jobTitle: "Content Creator", contactDetails: "quincy@example.com" },
+    { id: 18, avatar:'../avatars/avatar.png', name: "Rachel", leaveType: "Casual Leave", status: "Pending", startDate: "2025-03-05", endDate: "2025-03-06", department: "Finance", jobTitle: "Payroll Specialist", contactDetails: "rachel@example.com" },
+    { id: 19, avatar:'', name: "Samuel", leaveType: "Sick Leave", status: "Approved", startDate: "2025-02-22", endDate: "2025-02-24", department: "Sales", jobTitle: "Account Executive", contactDetails: "samuel@example.com" },
+    { id: 20, avatar:'', name: "Tina", leaveType: "Vacation", status: "Rejected", startDate: "2025-03-20", endDate: "2025-03-25", department: "HR", jobTitle: "Training Coordinator", contactDetails: "tina@example.com" },
+    { id: 21, avatar:'../avatars/user (1).png', name: "Kate", leaveType: "Sick Leave", status: "Approved", startDate: "2025-03-05", endDate: "2025-03-07", department: "Procurement", jobTitle: " Manager", contactDetails: "kate@example.com" },
+    { id: 22, avatar:'', name: "Lilian", leaveType: "Vacation", status: "Pending", startDate: "2025-03-10", endDate: "2025-03-12", department: "Operations", jobTitle: "Logistics Coordinator", contactDetails: "lilian@example.com" },
+    { id: 23, avatar:'../avatars/woman (3).png',name: "Monalisa", leaveType: "Sick Leave", status: "Rejected", startDate: "2025-02-23", endDate: "2025-02-24", department: "IT", jobTitle: "Backend Developer", contactDetails: "monalisa@example.com" },
+    { id: 24, avatar:'', name: "Nathaniel", leaveType: "Sick Leave", status: "Pending", startDate: "2025-04-01", endDate: "2025-04-10", department: "Procurement", jobTitle: "Trainee", contactDetails: "nathanial@example.com" },
+    { id: 25, avatar:'../avatars/user (1).png', name: "Lia", leaveType: "Sick Leave", status: "Approved", startDate: "2025-03-11", endDate: "2025-03-23", department: "HR", jobTitle: "Trainee", contactDetails: "lia@example.com" },
+    { id: 26, avatar:'../avatars/woman (4).png', name: "Paulina", leaveType: "Sick Leave", status: "Pending", startDate: "2025-03-09", endDate: "2025-03-14", department: "IT", jobTitle: "UI/UX Designer", contactDetails: "paulina@example.com" },
+    { id: 27, avatar:'../avatars/user (1).png', name: "Quinne", leaveType: "Vacation", status: "Approved", startDate: "2025-05-01", endDate: "2025-05-07", department: "Marketing", jobTitle: "Content Creator", contactDetails: "quinne@example.com" },
+    { id: 28, avatar:'../avatars/woman.png', name: "Rara", leaveType: "Casual Leave", status: "Pending", startDate: "2025-07-05", endDate: "2025-07-06", department: "Finance", jobTitle: "Accountant", contactDetails: "rara@example.com" },
+    { id: 29, avatar:'', name: "Kasamuel", leaveType: "Casual Leave", status: "Approved", startDate: "2025-02-28", endDate: "2025-03-24", department: "Sales", jobTitle: "Trainee", contactDetails: "kasamuel@example.com" },
+    { id: 30, avatar:'', name: "Trina", leaveType: "Sick Leave", status: "Rejected", startDate: "2025-03-09", endDate: "2025-03-25", department: "HR", jobTitle: "Trainee", contactDetails: "trina@example.com" },
   ]);
 
   
@@ -107,17 +105,8 @@ export default function EmployeeLeaveList() {
   const totalPages = Math.ceil(filteredEmployees.length / employeesPerPage);
 
   return (
-    <section className="employee-leave-list-container">
-     <div className="d-flex" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <h1 className="title" style={{ flex: 1, textAlign: 'center' }}>ABC COMPANY</h1>
-        <button style={{ alignSelf: 'flex-end',marginBottom :'8px' }}>
-            <a href="/login" style={{ textDecoration: 'none' ,color:'#fff' }}>Logout</a>
-        </button>
-    </div>
-  
-    
-      <CompanyImage />
-      <h2 className="subtitle">Employee Leave Requests</h2>
+    <div className="employee-leave-list-container">
+      <h1 class="_subtitle">Employee Leave Requests</h1>
 
       <div className="search-bar">
         <input
@@ -133,6 +122,7 @@ export default function EmployeeLeaveList() {
           <thead>
             <tr>
               <th>ID</th>
+              <th></th>
               <th>Name</th>
               <th>Leave Type</th>
               <th>Status</th>
@@ -142,6 +132,13 @@ export default function EmployeeLeaveList() {
             {currentEmployees.map((employee) => (
               <tr key={employee.id} onClick={() => handleEmployeeClick(employee)}>
                 <td>{employee.id}</td>
+                <td>
+                  <img
+                    src={employee.avatar || "../avatars/user.png"}
+                    alt={employee.name}
+                    style={{ width: "40px", height: "40px", borderRadius: "50%" }}
+                  />
+                </td>
                 <td>{employee.name}</td>
                 <td>{employee.leaveType}</td>
                 <td className={employee.status.toLowerCase()}>{employee.status}</td>
@@ -197,6 +194,6 @@ export default function EmployeeLeaveList() {
           </svg>
         </button>
       </div>
-    </section>
+    </div>
   );
 }
