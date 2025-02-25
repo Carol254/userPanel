@@ -53,7 +53,7 @@ body {
 
 /* Container Styling */
 .employee-leave-list-container {
-  max-width: 800px;
+ max-width:1000px;
   margin: auto;
   background: white;
   padding: 20px;
@@ -237,7 +237,7 @@ body {
 }
 
 .sidebar {
-  width: 250px; 
+  width: 200px; 
   background-color: #19203d;
   color: white;
   padding: 20px;
@@ -288,28 +288,28 @@ body {
   color: #5975eb; 
 }
 
-.sidebar ul li a.active {
-  color: #5975eb!important;
+.sidebar ul li .isActive{
+  color: #5975eb !important;
   font-weight: bold;
 }
 
 .content {
   flex: 1;
-  margin-left: 250px; 
+  margin-left: 250px;
+  margin-top: 60px; 
   padding: 20px;
-  height: 100vh; 
-  overflow-y: scroll; 
-  scrollbar-width: none; 
-  -ms-overflow-style: none; 
+  height: calc(100vh - 60px); 
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
-
 
 .content::-webkit-scrollbar {
   display: none;
 }
 
 .dashboard-container{
-  max-width: 800px;
+ max-width:1000px;
   margin: auto;
   background: white;
   padding: 20px;
@@ -319,4 +319,19 @@ body {
 ._subtitle{
   background-color: rgba(89, 117, 235, 0.2);
   padding: 3px 10px;
+}
+.top-bar-container {
+  position: fixed;
+  top: 0;
+  left: 240px; 
+  right: 0;
+  height: 60px; 
+  background-color: white; 
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+  z-index: 1000; 
+  padding: 0 20px;
+  gap: 10px;
 }
