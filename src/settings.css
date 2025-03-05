@@ -1,0 +1,47 @@
+/* Settings.css */
+ .settings-page {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(89, 117, 235, 0.2);
+    height: 100vh;
+  }
+  
+  .settings-page h2 {
+    text-align: center;
+  }
+  
+  .setting-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button.danger {
+    background-color: red;
+    color: white;
+  }
+  
+  .dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+  
+  .light-mode {
+    background-color: white;
+    color: black;
+  }
+  .select-approval{
+    padding:5px;
+    border: 2px solid #5975eb;
+     border-radius:5px;
+  }

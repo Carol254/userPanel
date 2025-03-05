@@ -4,6 +4,7 @@ import SidebarLayout from "./sidebarLayout"; // Import SidebarLayout
 import Login from "./login";
 import EmployeeLeaveList from "./employees";
 import Dashboard from "./dashboard";
+import Settings from "./settings";
 
 
 function TopBar() {
@@ -52,6 +53,7 @@ function App() {
                 <Routes>
                   <Route path="/dashboard" element={<Dashboard />} />
                   <Route path="/employees" element={<EmployeeLeaveList />} />
+                  <Route path="/settings" element={<Settings/>}/>
                   <Route path="*" element={<Navigate to="/dashboard" />} />
                 </Routes>
               </SidebarLayout>
